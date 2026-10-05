@@ -1310,60 +1310,6 @@ body.page1-locked {
   .events-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-/* Center Seal emblem */
-.curtain-center-seal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.6);
-  width: clamp(130px, 25vh, 190px);
-  height: clamp(130px, 25vh, 190px);
-  border-radius: 50%;
-  background: radial-gradient(circle, #5b0710 0%, #200204 80%);
-  border: 3px solid var(--gold-main);
-  box-shadow: 0 0 40px rgba(212, 175, 55, 0.8), inset 0 0 15px rgba(0, 0, 0, 0.8);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
-  opacity: 0;
-  transition: opacity 0.5s ease 0.6s, transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.6s;
-  text-align: center;
-  padding: 0.75rem;
-}
-
-.royal-curtain-container.closed .curtain-center-seal {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.seal-monogram {
-  font-family: var(--font-cinzel);
-  font-size: clamp(1.4rem, 4vh, 2.2rem);
-  font-weight: 900;
-  color: var(--gold-light);
-  letter-spacing: 2px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.8);
-}
-
-.seal-text {
-  font-family: var(--font-sans);
-  font-size: clamp(0.5rem, 1.2vh, 0.65rem);
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  color: var(--gold-main);
-  margin-top: 0.2rem;
-  text-transform: uppercase;
-}
-
-/* ==========================================================================
-   RESPONSIVE MEDIA QUERIES
-   ========================================================================== */
-@media (max-width: 1024px) {
-  .events-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
   .event-card:last-child {
     grid-column: span 2;
   }
