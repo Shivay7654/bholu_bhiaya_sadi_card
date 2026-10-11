@@ -28,7 +28,7 @@ const OpeningLetter = ({ onNavigate }) => {
         <div className="hero-tagline-left">
           <div className="couple-portrait-frame">
             <img 
-              src="/images/couple_portrait.png" 
+              src="./images/couple_portrait.png" 
               alt="Ravi Prakash & Jyoti Singh" 
               className="couple-portrait-img" 
             />

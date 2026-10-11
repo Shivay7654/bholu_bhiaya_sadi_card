@@ -31,7 +31,7 @@ const eventData = {
     day: 'SATURDAY',
     time: '10:00 AM – 11:00 AM',
     location: VENUE_ADDRESS,
-    bgImage: '/images/tilak_ceremony_bg.png',
+    bgImage: './images/tilak_ceremony_bg.png',
     overlayClass: 'overlay-tilak',
     icon: <TilakIcon />
   },
@@ -43,7 +43,7 @@ const eventData = {
     day: 'SATURDAY',
     time: '01:00 PM – 02:00 PM',
     location: VENUE_ADDRESS,
-    bgImage: '/images/haldi_ceremony_bg.png',
+    bgImage: './images/haldi_ceremony_bg.png',
     overlayClass: 'overlay-haldi',
     icon: <HaldiIcon />
   },
@@ -55,7 +55,7 @@ const eventData = {
     day: 'SATURDAY',
     time: '03:00 PM – 04:00 PM',
     location: VENUE_ADDRESS,
-    bgImage: '/images/mehandi_ceremony_bg.png',
+    bgImage: './images/mehandi_ceremony_bg.png',
     overlayClass: 'overlay-mehandi',
     icon: <MehandiIcon />
   },
@@ -67,7 +67,7 @@ const eventData = {
     day: 'SATURDAY',
     time: '06:00 PM – 12:00 AM (MIDNIGHT)',
     location: VENUE_ADDRESS,
-    bgImage: '/images/barat_ceremony_bg.png',
+    bgImage: './images/barat_ceremony_bg.png',
     overlayClass: 'overlay-barat',
     icon: <BaratIcon />
   },
@@ -79,7 +79,7 @@ const eventData = {
     day: 'SUNDAY',
     time: '10:00 AM ONWARDS',
     location: VENUE_ADDRESS,
-    bgImage: '/images/vidai_ceremony_bg.png',
+    bgImage: './images/vidai_ceremony_bg.png',
     overlayClass: 'overlay-vidai',
     icon: <VidaiIcon />,
     quote: 'Some goodbyes are simply new beginnings.'
