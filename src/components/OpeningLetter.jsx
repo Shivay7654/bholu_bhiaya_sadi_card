@@ -29,7 +29,7 @@ const OpeningLetter = ({ onNavigate }) => {
           <div className="couple-portrait-frame">
             <img 
               src="/images/couple_portrait.png" 
-              alt="Ravi Prakash & Joti Singh" 
+              alt="Ravi Prakash & Jyoti Singh" 
               className="couple-portrait-img" 
             />
             <div className="portrait-gold-border"></div>
