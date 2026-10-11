@@ -64,7 +64,7 @@ const OpeningLetter = ({ onNavigate }) => {
             <h2 className="card-names">
               <span>Ravi Prakash</span>
               <Heart className="card-heart" fill="#9c1524" />
-              <span>Joti Singh</span>
+              <span>Jyoti Singh</span>
             </h2>
 
             <div className="card-flourish"></div>

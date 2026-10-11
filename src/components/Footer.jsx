@@ -8,7 +8,7 @@ const Footer = ({ onOpenRsvp }) => {
         <Crown className="text-gold-solid" size={36} style={{ margin: '0 auto 1rem auto' }} />
         
         <h3 className="footer-logo">R & J</h3>
-        <p className="footer-names">Ravi Prakash ♡ Joti Singh</p>
+        <p className="footer-names">Ravi Prakash ♡ Jyoti Singh</p>
         <p style={{ fontFamily: 'var(--font-cinzel)', color: 'var(--gold-main)', fontSize: '0.9rem', letterSpacing: '2px', margin: '0.4rem 0 1.5rem 0' }}>
           GROOM'S ROYAL WEDDING CELEBRATION
         </p>
@@ -53,11 +53,11 @@ const Footer = ({ onOpenRsvp }) => {
         </div>
 
         <p className="footer-hashtags">
-          #RaviWedsJoti &nbsp;•&nbsp; #RaviJoti2026 &nbsp;•&nbsp; #SasaramWedding
+          #RaviWedsJyoti &nbsp;•&nbsp; #RaviJyoti2026 &nbsp;•&nbsp; #SasaramWedding
         </p>
 
         <p className="footer-copy">
-          Designed with Royal Indian Elegance for Ravi Prakash & Joti Singh Wedding.
+          Designed with Royal Indian Elegance for Ravi Prakash & Jyoti Singh Wedding.
         </p>
       </div>
     </footer>

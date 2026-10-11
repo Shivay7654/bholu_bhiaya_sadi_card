@@ -1,6 +1,6 @@
 import React from 'react';
 
-const RoyalCurtain = ({ isOpen, isAnimating, statusText = "RAVI PRAKASH ♡ JOTI SINGH" }) => {
+const RoyalCurtain = ({ isOpen, isAnimating, statusText = "RAVI PRAKASH ♡ JYOTI SINGH" }) => {
   if (!isAnimating && isOpen) return null;
 
   return (

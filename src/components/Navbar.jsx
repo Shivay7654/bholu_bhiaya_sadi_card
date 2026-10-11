@@ -24,13 +24,13 @@ const Navbar = ({ isMuted, toggleMusic, onOpenRsvp, onNavigateView, activeView }
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <button onClick={() => handleNavClick('page1', 'RAVI PRAKASH ♡ JOTI SINGH')} className="nav-brand" style={{ background: 'none', border: 'none' }}>
+      <button onClick={() => handleNavClick('page1', 'RAVI PRAKASH ♡ JYOTI SINGH')} className="nav-brand" style={{ background: 'none', border: 'none' }}>
         <Crown className="nav-logo-icon text-gold-solid" />
         <span className="nav-logo-text">R & J</span>
       </button>
 
       <ul className="nav-links">
-        <li><button onClick={() => handleNavClick('page1', 'RAVI PRAKASH ♡ JOTI SINGH')} className={`nav-link ${activeView === 'page1' ? 'active' : ''}`}>Home</button></li>
+        <li><button onClick={() => handleNavClick('page1', 'RAVI PRAKASH ♡ JYOTI SINGH')} className={`nav-link ${activeView === 'page1' ? 'active' : ''}`}>Home</button></li>
         <li><button onClick={() => handleNavClick('page2', 'PALACE WELCOME')} className={`nav-link ${activeView === 'page2' ? 'active' : ''}`}>Welcome</button></li>
         <li><button onClick={() => handleNavClick('page3', 'CELEBRATE EVERY MOMENT')} className={`nav-link ${activeView === 'page3' ? 'active' : ''}`}>All Events</button></li>
         <li><button onClick={() => handleNavClick('tilak', 'TILAK CEREMONY')} className={`nav-link ${activeView === 'tilak' ? 'active' : ''}`}>Tilak</button></li>
@@ -62,33 +62,37 @@ const Navbar = ({ isMuted, toggleMusic, onOpenRsvp, onNavigateView, activeView }
       {mobileMenuOpen && (
         <div style={{
           position: 'fixed',
-          top: '70px',
+          top: '64px',
           left: 0,
           width: '100%',
-          background: 'rgba(26, 3, 5, 0.98)',
-          backdropFilter: 'blur(12px)',
-          borderBottom: '1px solid rgba(212, 175, 55, 0.3)',
-          padding: '2rem 1.5rem',
+          maxHeight: 'calc(100vh - 64px)',
+          overflowY: 'auto',
+          WebkitOverflowScrolling: 'touch',
+          background: 'rgba(22, 3, 5, 0.98)',
+          backdropFilter: 'blur(16px)',
+          borderBottom: '2px solid rgba(212, 175, 55, 0.4)',
+          padding: '1.5rem 1.2rem 2.5rem 1.2rem',
           display: 'flex',
           flexDirection: 'column',
-          gap: '1.2rem',
+          gap: '1rem',
           alignItems: 'center',
-          zIndex: 99
+          zIndex: 999,
+          boxShadow: '0 20px 40px rgba(0, 0, 0, 0.8)'
         }}>
-          <button onClick={() => handleNavClick('page1', 'RAVI PRAKASH ♡ JOTI SINGH')} className="nav-link">Home</button>
-          <button onClick={() => handleNavClick('page2', 'PALACE WELCOME')} className="nav-link">Welcome</button>
-          <button onClick={() => handleNavClick('page3', 'CELEBRATE EVERY MOMENT')} className="nav-link">All Events</button>
-          <button onClick={() => handleNavClick('tilak', 'TILAK CEREMONY')} className="nav-link">Tilak</button>
-          <button onClick={() => handleNavClick('haldi', 'HALDI CEREMONY')} className="nav-link">Haldi</button>
-          <button onClick={() => handleNavClick('mehandi', 'MEHANDI CEREMONY')} className="nav-link">Mehandi</button>
-          <button onClick={() => handleNavClick('barat', 'BARAT PROCESSION')} className="nav-link">Barat</button>
-          <button onClick={() => handleNavClick('vidai', 'VIDAI CEREMONY')} className="nav-link">Vidai</button>
+          <button onClick={() => handleNavClick('page1', 'RAVI PRAKASH ♡ JYOTI SINGH')} className="nav-link" style={{ fontSize: '0.95rem', padding: '0.6rem 1rem' }}>Home</button>
+          <button onClick={() => handleNavClick('page2', 'PALACE WELCOME')} className="nav-link" style={{ fontSize: '0.95rem', padding: '0.6rem 1rem' }}>Welcome</button>
+          <button onClick={() => handleNavClick('page3', 'CELEBRATE EVERY MOMENT')} className="nav-link" style={{ fontSize: '0.95rem', padding: '0.6rem 1rem' }}>All Events</button>
+          <button onClick={() => handleNavClick('tilak', 'TILAK CEREMONY')} className="nav-link" style={{ fontSize: '0.95rem', padding: '0.6rem 1rem' }}>Tilak</button>
+          <button onClick={() => handleNavClick('haldi', 'HALDI CEREMONY')} className="nav-link" style={{ fontSize: '0.95rem', padding: '0.6rem 1rem' }}>Haldi</button>
+          <button onClick={() => handleNavClick('mehandi', 'MEHANDI CEREMONY')} className="nav-link" style={{ fontSize: '0.95rem', padding: '0.6rem 1rem' }}>Mehandi</button>
+          <button onClick={() => handleNavClick('barat', 'BARAT PROCESSION')} className="nav-link" style={{ fontSize: '0.95rem', padding: '0.6rem 1rem' }}>Barat</button>
+          <button onClick={() => handleNavClick('vidai', 'VIDAI CEREMONY')} className="nav-link" style={{ fontSize: '0.95rem', padding: '0.6rem 1rem' }}>Vidai</button>
           <button 
             onClick={() => { setMobileMenuOpen(false); onOpenRsvp(); }}
             className="btn-explore"
-            style={{ marginTop: '1rem', width: '100%', justifyContent: 'center' }}
+            style={{ marginTop: '0.5rem', width: '100%', maxWidth: '300px', justifyContent: 'center', padding: '0.75rem' }}
           >
-            RSVP NOW
+            CONFIRM RSVP ✨
           </button>
         </div>
       )}

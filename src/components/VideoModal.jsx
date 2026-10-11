@@ -29,7 +29,7 @@ const VideoModal = ({ eventTitle, onClose }) => {
             </h3>
           </div>
           <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.75rem', color: 'rgba(255,248,235,0.7)', letterSpacing: '1px' }}>
-            RAVI PRAKASH ♡ JOTI SINGH
+            RAVI PRAKASH ♡ JYOTI SINGH
           </span>
         </div>
 

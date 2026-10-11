@@ -30,21 +30,21 @@ const RSVPModal = ({ isOpen, onClose }) => {
       <div 
         className="video-modal-container" 
         onClick={(e) => e.stopPropagation()}
-        style={{ maxWidth: '600px', background: '#250508', border: '2px solid #d4af37' }}
+        style={{ maxWidth: '600px', width: '92%', maxHeight: '88dvh', overflowY: 'auto', background: '#250508', border: '2px solid #d4af37' }}
       >
         <button className="video-modal-close" onClick={onClose} aria-label="Close RSVP">
           <X size={20} />
         </button>
 
-        <div style={{ padding: '2.5rem 2rem', textAlign: 'center' }}>
+        <div style={{ padding: '2rem 1.5rem', textAlign: 'center' }}>
           {!submitted ? (
             <>
               <Heart className="text-gold-solid" size={36} style={{ margin: '0 auto 0.8rem auto' }} />
-              <h2 style={{ fontFamily: 'var(--font-cinzel)', color: 'var(--gold-light)', fontSize: '1.8rem', letterSpacing: '2px', marginBottom: '0.2rem' }}>
+              <h2 style={{ fontFamily: 'var(--font-cinzel)', color: 'var(--gold-light)', fontSize: 'clamp(1.4rem, 4vw, 1.8rem)', letterSpacing: '2px', marginBottom: '0.2rem' }}>
                 RSVP FOR GROOM'S WEDDING
               </h2>
               <p style={{ fontFamily: 'var(--font-serif)', color: 'rgba(255,248,235,0.85)', fontSize: '1.1rem', fontStyle: 'italic', marginBottom: '0.6rem' }}>
-                Ravi Prakash ♡ Joti Singh
+                Ravi Prakash ♡ Jyoti Singh
               </p>
 
               {/* Venue Tag */}
@@ -53,7 +53,7 @@ const RSVPModal = ({ isOpen, onClose }) => {
                 <span>Mangalam, Prabhakar Road, Sasaram, Bihar</span>
               </div>
 
-              <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem', textAlign: 'left' }}>
+              <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.1rem', textAlign: 'left' }}>
                 <div>
                   <label style={{ display: 'block', fontFamily: 'var(--font-sans)', fontSize: '0.75rem', letterSpacing: '1.5px', color: 'var(--gold-main)', textTransform: 'uppercase', marginBottom: '0.4rem' }}>
                     Your Full Name *
@@ -72,12 +72,12 @@ const RSVPModal = ({ isOpen, onClose }) => {
                       borderRadius: '4px',
                       color: '#fff',
                       fontFamily: 'var(--font-sans)',
-                      fontSize: '0.9rem'
+                      fontSize: '16px'
                     }}
                   />
                 </div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))', gap: '1rem' }}>
                   <div>
                     <label style={{ display: 'block', fontFamily: 'var(--font-sans)', fontSize: '0.75rem', letterSpacing: '1.5px', color: 'var(--gold-main)', textTransform: 'uppercase', marginBottom: '0.4rem' }}>
                       Phone / Whatsapp *
@@ -96,7 +96,7 @@ const RSVPModal = ({ isOpen, onClose }) => {
                         borderRadius: '4px',
                         color: '#fff',
                         fontFamily: 'var(--font-sans)',
-                        fontSize: '0.9rem'
+                        fontSize: '16px'
                       }}
                     />
                   </div>
@@ -116,7 +116,7 @@ const RSVPModal = ({ isOpen, onClose }) => {
                         borderRadius: '4px',
                         color: '#fff',
                         fontFamily: 'var(--font-sans)',
-                        fontSize: '0.9rem'
+                        fontSize: '16px'
                       }}
                     >
                       <option value="1">1 Person</option>
@@ -135,7 +135,7 @@ const RSVPModal = ({ isOpen, onClose }) => {
                     rows="3"
                     value={formData.wishes}
                     onChange={(e) => setFormData({ ...formData, wishes: e.target.value })}
-                    placeholder="Send your heartfelt wishes to Ravi Prakash..."
+                    placeholder="Send your heartfelt wishes to Ravi Prakash & Jyoti Singh..."
                     style={{
                       width: '100%',
                       padding: '0.8rem 1rem',
@@ -144,7 +144,7 @@ const RSVPModal = ({ isOpen, onClose }) => {
                       borderRadius: '4px',
                       color: '#fff',
                       fontFamily: 'var(--font-sans)',
-                      fontSize: '0.9rem'
+                      fontSize: '16px'
                     }}
                   />
                 </div>
@@ -152,7 +152,7 @@ const RSVPModal = ({ isOpen, onClose }) => {
                 <button 
                   type="submit"
                   className="btn-explore"
-                  style={{ marginTop: '0.8rem', width: '100%', justifyContent: 'center' }}
+                  style={{ marginTop: '0.5rem', width: '100%', justifyContent: 'center' }}
                 >
                   CONFIRM ATTENDANCE ✨
                 </button>

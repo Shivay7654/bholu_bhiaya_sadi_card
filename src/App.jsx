@@ -97,7 +97,7 @@ function App() {
   // Royal Curtain Transition state
   const [curtainOpen, setCurtainOpen] = useState(true);
   const [isCurtainAnimating, setIsCurtainAnimating] = useState(false);
-  const [curtainSealText, setCurtainSealText] = useState("RAVI PRAKASH ♡ JOTI SINGH");
+  const [curtainSealText, setCurtainSealText] = useState("RAVI PRAKASH ♡ JYOTI SINGH");
 
   const audioRef = useRef(null);
   const currentAudioKeyRef = useRef('main');
@@ -174,7 +174,7 @@ function App() {
   };
 
   // Trigger Royal Curtain Animation with Callback (Guarded against repeated clicks)
-  const triggerCurtainTransition = (callback, sealText = "RAVI PRAKASH ♡ JOTI SINGH") => {
+  const triggerCurtainTransition = (callback, sealText = "RAVI PRAKASH ♡ JYOTI SINGH") => {
     if (isTransitioningRef.current) return; // Ignore duplicate rapid clicks
     isTransitioningRef.current = true;
     setIsCurtainAnimating(true);
